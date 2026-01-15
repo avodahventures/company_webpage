@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avodah Ventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Hero Section */
+    header {
+      background: linear-gradient(135deg, #ff6ec4, #7873f5);
+      color: white;
+      text-align: center;
+      padding: 120px 20px 80px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #ff6ec4;
+      padding: 15px 35px;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: #ff4aa1;
+      color: white;
+    }
+
+    /* Wave Divider */
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+    }
+
+    /* Services Section */
+    section.services {
+      padding: 80px 20px;
+      background: #f0f4ff;
+      text-align: center;
+    }
+
+    section.services h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 35px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #ff6ec4;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Call to Action */
+    section.cta {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #ff9a8b, #ffc6ff);
+      color: white;
+      text-align: center;
+    }
+
+    section.cta h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    section.cta p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px 20px;
+      background: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Animations */
+    header h1, header p, .btn-primary, section h2, .card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    header h1 { animation-delay: 0.2s; }
+    header p { animation-delay: 0.5s; }
+    .btn-primary { animation-delay: 0.8s; }
+    section.services h2 { animation-delay: 0.3s; }
+    .card { animation-delay: 0.6s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <h1>Avodah Ventures</h1>
+    <p>Building innovative digital products today, and expanding business solutions for tomorrow.</p>
+    <a href="#services" class="btn-primary">Explore Our Work</a>
+    <svg class="wave" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg"><path fill="#f0f4ff" d="M0,64L80,58.7C160,53,320,43,480,42.7C640,43,800,53,960,58.7C1120,64,1280,64,1360,64L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Digital Products</h3>
+        <p>We design and build cutting-edge web and mobile applications that delight users and scale with your business.</p>
+      </div>
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Creating intuitive and engaging designs to ensure your products are visually stunning and user-friendly.</p>
+      </div>
+      <div class="card">
+        <h3>Business Solutions</h3>
+        <p>Flexible solutions for various business needs—from automation to strategy, we’ve got you covered.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to Build Something Amazing?</h2>
+    <p>Partner with Avodah Ventures to turn your ideas into reality.</p>
+    <a href="mailto:contact@avodahventures.com" class="btn-primary">Get in Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Avodah Ventures. All rights reserved.
+  </footer>
+</body>
+</html>
